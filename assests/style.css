@@ -2,8 +2,12 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    /* width: fit-content; */
+    /* height: fit-content; */
 }
-
+/* body{
+    min-width: fit-content;
+} */
 html{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -45,7 +49,8 @@ html{
 .menu{
     height: 50px;
     background: #00ae8b;
-    width: 100%;
+    width: 1520px;
+    min-width: fit-content;
 }
 
 #slider-menu .menu ul li{
@@ -73,6 +78,9 @@ li::marker{
 .menu1{
     background: #ebebeb;
     height: 45px;
+    width: 1525px;
+    min-width: fit-content;
+    
 }
  .menu1 ul li{
     float: left;
@@ -96,6 +104,7 @@ li::marker{
     margin-top: 32px;
     margin-right: 76px;
     justify-content: space-between;
+    min-width: fit-content;
 }
 
 
@@ -116,6 +125,7 @@ li::marker{
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
+    min-width: fit-content;
 }
 
 #all #notifi #box{
@@ -182,6 +192,7 @@ form.example input[type=text] {
     font-weight: bold;
     border-radius: 8px 8px 0px 0px;  
     
+    
 }
 
 #all #notifi #box .contentbox2{
@@ -228,6 +239,71 @@ form.example input[type=text] {
     width: 270px;
     margin-right: 70px;
 }
+
+#table2{
+        width: 1450px;
+        margin-top: 32px;
+        
+    }
+    #table1{
+        border: none;
+    }
+#table2, th, td{
+        border: 0.5px solid #333;
+        border-collapse: collapse;
+        height: 62px;
+        text-align: center;
+    }
+
+#table2 #row2head .col1 {
+        width: 150px;
+        height: 132px;
+    }
+
+    #row1head{
+        height: 40px;
+    }
+
+    .col11{
+        text-align: left;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .rowend{
+        background: #c6251d ;
+    }
+    #table2 #row1head .rfhead{
+        background: #007c3b;
+    }
+    #table2 #row2head .col1{
+        width: 165px;
+    }
+    #table2 #row2head .col2{
+        background: #348ddd;
+    }
+    #table2 #row2head .col3{
+        background: #2077c6;
+    }
+    #table2 #row2head .col4{
+        background: #0960ae;
+    }
+    #table2 #row2head .col5{
+        background: #9e9e9e;
+    }
+    #table2 #row2head .col6{
+        background: #898585;
+    }#table2 #row2head .col7{
+        background: #7a7676;
+    }
+    #table2 #row2head .col8{
+        background: #ffd201;
+    }
+    .rowend{
+        color: white;
+    }
+
+
+
 #all #map{
     width: 1450px;
 }
@@ -243,9 +319,10 @@ form.example input[type=text] {
 }
 
 #footer{
-    width: 100%;
+    width: 1520px;
     height: 700px;
     margin-top: 40px;
+    
     
 }
 
@@ -255,12 +332,14 @@ form.example input[type=text] {
     background: #008565;
     display: flex;
     
+    
 }
 
 #footer #footer2{
     
     height: 300px;
     background: #008565;
+    min-width: fit-content;
 } 
 
  #footer #footer1 .footer1-1st{
@@ -306,4 +385,12 @@ h4{
   line-height: 50px; 
   color: white;
 }
-
+.top1-1{
+    float: right;
+}
+.litop2{
+    float: left;
+}
+.litop3{
+    float: right;
+}
