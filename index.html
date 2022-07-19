@@ -58,11 +58,47 @@
                 </ul>
             </div>
     <div id="all">
-        <div id="calender">
+        <!-- <div id="calender">
             <img id="calander_thang1" src="./assests/content/image1.png" alt="Thang1">
             <img id="calander_thang2" src="./assests/content/image2.png" alt="Thang1">
             <img id="calander_thang3" src="./assests/content/image3.png" alt="Thang1">
-        </div>
+        </div> -->
+        <div id="calendar">
+            <button class="button-display-left" onclick="plusDivs(-1)">&#10094;</button>
+
+            <img class="mySlides" src="./assests/content/image1.png" alt="Thang1" style="width: 28%">
+            <img class="mySlides" src="./assests/content/image2.png" alt="Thang2" style="width: 28%">
+            <img class="mySlides" src="./assests/content/image3.png" alt="Thang3" style="width: 28%">
+            <img class="mySlides" src="./assests/content/image1.png" alt="Thang1" style="width: 28%">
+            <img class="mySlides" src="./assests/content/image2.png" alt="Thang2" style="width: 28%">
+            
+            
+            <button class="button-display-right" onclick="plusDivs(1)">&#10095;</button>
+   </div>
+
+   <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+    //   if (n > x.length) {slideIndex = n-x.length}
+    //   if (n < 1) {slideIndex = x.length}
+    if (n > x.length-2){n=x.length-2;return}
+    if (n < 1){n=1;return}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "inline";  
+      x[slideIndex].style.display = "inline"; 
+      x[slideIndex+1].style.display = "inline";  
+    }
+    </script>
 
         <div id="notifi">
             <div id="box">
